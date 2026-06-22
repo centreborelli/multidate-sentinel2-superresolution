@@ -1,0 +1,14 @@
+{
+  "datetime": "2020-08-09 11:06:29.024000+00:00",
+  "eo:cloud_cover": 26.19,
+  "instruments": "msi",
+  "platform": "sentinel-2b",
+  "sentinel2:datatake_id": "GS2B_20200809T110629_017895_N05.00",
+  "sentinel2:mgrs_tile": "30TUM",
+  "sentinel2:orbit_direction": "desc",
+  "sentinel2:orbit_number": 17895,
+  "sentinel2:processing_baseline": "05.00",
+  "sentinel2:relative_orbit_number": 137,
+  "ard:cloud_cover": 0.0,
+  "ard:processing_baseline": "v2.0.0"
+}

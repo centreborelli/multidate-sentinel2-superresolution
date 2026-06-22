@@ -1,0 +1,14 @@
+{
+  "catalog:published": "2023-09-18T18:50:09.119762Z",
+  "catalog:published_at_source": "2024-04-19T13:04:15.78152Z",
+  "datetime": "2021-07-19 10:46:19.025000+00:00",
+  "eo:cloud_cover": 0.15,
+  "instruments": "msi",
+  "platform": "sentinel-2b",
+  "sentinel2:datatake_id": "GS2B_20210719T104619_022814_N05.00",
+  "sentinel2:mgrs_tile": "30TXM",
+  "sentinel2:orbit_direction": "desc",
+  "sentinel2:orbit_number": 22814,
+  "sentinel2:processing_baseline": "05.00",
+  "sentinel2:relative_orbit_number": 51
+}
