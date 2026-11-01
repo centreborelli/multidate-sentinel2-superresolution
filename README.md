@@ -70,7 +70,7 @@ You can training by editing `run_training.py` with desired parameters:
 
 ### OpenSR Test
 
-- Download dateset from [Hugging Face repository](https://huggingface.co/datasets/andersoncotrim/md_l1c_l1b_data) and place in `_data/` folder:
+- Download dateset from [Hugging Face repository](https://huggingface.co/datasets/andersoncotrim/opensr_multidate) and place in `_data/` folder:
 
 ```
 _data/
