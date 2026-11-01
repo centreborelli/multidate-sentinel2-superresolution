@@ -43,7 +43,7 @@ python run_examples.py
 
 ### Training
 
-- Download dateset from Zenodo (*coming soon*) and place in `_data/` folder:
+- Download dateset from [Hugging Face repository](https://huggingface.co/datasets/andersoncotrim/md_l1c_l1b_data) and place in `_data/` folder:
 ```
 _data/
 └── md_l1c_l1b_data/    (training data)
@@ -70,7 +70,7 @@ You can training by editing `run_training.py` with desired parameters:
 
 ### OpenSR Test
 
-- Download dateset from Zenodo (*coming soon*) and place in `_data/` folder:
+- Download dateset from [Hugging Face repository](https://huggingface.co/datasets/andersoncotrim/md_l1c_l1b_data) and place in `_data/` folder:
 
 ```
 _data/
@@ -91,11 +91,20 @@ python run_opensr_gen_geotiff.py
 python run_opensr_compute_metrics.py
 ```
 
-[//]: # (## Citation)
+## Citation
 
-[//]: # ()
-[//]: # (If you use this repository in your research, please cite our paper:)
 
+If you use this repository in your research, please cite our paper:
+
+```
+@article{cotrim2026selfsupervised,
+  title   = {Self-Supervised Multi-Date Multi-Spectral Super-Resolution for Sentinel-2 Imagery},
+  author  = {Cotrim, A. Nogueira and Anger, J. and Facciolo, G. and Santos, C. A. Nogueira and Pedrini, H.},
+  journal = {IEEE Transactions on Geoscience and Remote Sensing},
+  year    = {2026},
+  note    = {Accepted for publication}
+}
+```
 
 ## License
 

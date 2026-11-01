@@ -33,7 +33,7 @@ def _base(model_class, epochs, lr=0.0001, batch_size=2, input_bands='10m', outpu
             aux_source='both',
             aux_orbit_source=training_orbit_source,
             randomness_closest_dates=randomness_closest_dates,
-            limit_samples=200,
+            # limit_samples=200,
         ),
 
         dataset_val_params=dict(
@@ -44,7 +44,7 @@ def _base(model_class, epochs, lr=0.0001, batch_size=2, input_bands='10m', outpu
             aux_fill='mirror',
             aux_source='both',
             aux_orbit_source='mixed',
-            limit_samples=20,
+            # limit_samples=20,
         ),
 
         input_bands=input_bands,
@@ -82,12 +82,12 @@ def sdselfsen2_only10m():
                  mixed_precision='fp16')
 
 def mdselfsen2():
-    return _base(MDSelfS2Model, 200, aux_frames=3, input_bands='10m_20m', output_bands='10m_20m',
+    return _base(MDSelfS2Model, 200, aux_frames=9, input_bands='10m_20m', output_bands='10m_20m',
                  training_aux_strategy='closest_dates', randomness_closest_dates=0.4, use_alignment=False,
                  mixed_precision='fp16')
 
 def mdselfsen2_only10m():
-    return _base(MDSelfS2Model, 200, aux_frames=3, input_bands='10m', output_bands='10m',
+    return _base(MDSelfS2Model, 200, aux_frames=4, input_bands='10m', output_bands='10m',
                  training_aux_strategy='closest_dates', randomness_closest_dates=0.4, use_alignment=False,
                  mixed_precision='fp16')
 

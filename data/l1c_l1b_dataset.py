@@ -49,11 +49,11 @@ class L1CToL1BDataset(Dataset):
         if limit_samples is not None:
             self.ref_df = self.ref_df[:limit_samples]
 
-        if data_type == 'train' or data_type == 'val':
+        if data_type in ['train', 'val', 'train-val']:
             self.aux_df = pd.read_parquet(precomputed_path / f"aux-random-train-val.parquet", engine='pyarrow')
             self.aux_df = self.aux_df[self.aux_df['sample_id'].isin(self.ref_df['sample_id'].unique())]
         else:
-            self.aux_df = pd.read_parquet(precomputed_path / f"random-{data_type}2.parquet", engine='pyarrow')
+            self.aux_df = pd.read_parquet(precomputed_path / f"aux-random-test.parquet", engine='pyarrow')
 
         if aux_source == 'past':
             self.aux_df = self.aux_df[self.aux_df['source'] == 'p']
